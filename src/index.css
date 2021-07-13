@@ -44,10 +44,14 @@ h2 {
 }
 
 p {
+  margin-top: 1em;
   font-size: 1.1em;
   text-shadow: 0 1px 0 rgba(0, 0, 0, .25);
 }
-
+.newsletter{
+  font-size: 1.1em;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, .25);
+}
 form {
   width: 60%;
   background: white;
@@ -102,7 +106,7 @@ header {
 }
 
 header input {
-  padding: 1px;
+  padding: 4px;
   font-size: 1em;
   width: 100%;
 }

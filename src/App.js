@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
+import ProductList from "./ProductList"
 
 class App extends Component{
 
@@ -23,6 +24,7 @@ render() {
          <header>
           <h1>Random Store</h1>
           <p>Random Fashion Co.</p>
+          <p className="newsletter">Subscribe to newsletter:</p>
           <form onSubmit={this.addItem}>
               <input  
                   type="text"
@@ -32,6 +34,10 @@ render() {
           <button type="submit" name="submit" value="submit">Submit</button>
           </form>
           </header>
+
+          <div className="main">
+        <ProductList  title="Product List"/>
+    </div>
       </div>
   );
  }
