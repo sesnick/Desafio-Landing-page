@@ -15,6 +15,7 @@ class App extends Component{
   e.preventDefault();
     let emailUser = this.state.email;
     localStorage.setItem('email',emailUser );
+    
   };
 
 render() {
