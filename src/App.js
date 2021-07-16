@@ -5,17 +5,28 @@ import ProductList from "./ProductList"
 class App extends Component{
 
   state = {
-    email:" "
+    email:" " ,
+   };
+
+  lastId= 0
+  newGuestId =() =>{
+    let id = this.lastId;
+    this.lastId++;
+    return id;
   };
+
 
   handleUserInput = e =>
   this.setState({ email: e.target.value});
 
  addItem = e  => {
   e.preventDefault();
-    let emailUser = this.state.email;
-    localStorage.setItem('email',emailUser );
     
+    let id = this.newGuestId();
+    console.log(id);
+    let emailUser = this.state.email;
+    localStorage.setItem(`email ${id}`,emailUser );
+
   };
 
 render() {
@@ -37,7 +48,7 @@ render() {
           </header>
 
           <div className="main">
-        <ProductList  title="Product List"/>
+        <ProductList  title="Black Friday"/>
     </div>
       </div>
   );
