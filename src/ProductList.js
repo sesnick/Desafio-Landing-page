@@ -1,10 +1,13 @@
 import React from 'react';
+import Pictures from "./Pictures"
 
 const ProductList = props => {
     return(
-        <span>
-            {props.title}
-        </span>
+        <div className = "Banner">
+            {props.title} 
+            <Pictures />                 
+        </div>
+
     );
 };
 

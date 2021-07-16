@@ -5,7 +5,7 @@ import ProductList from "./ProductList"
 class App extends Component{
 
   state = {
-    email:" " ,
+    email:"" ,
    };
 
   lastId= 0
@@ -25,7 +25,8 @@ class App extends Component{
     let id = this.newGuestId();
     console.log(id);
     let emailUser = this.state.email;
-    localStorage.setItem(`email ${id}`,emailUser );
+    localStorage.setItem(`email ${id}`,emailUser ); 
+    this.setState({ email:""});
 
   };
 
@@ -47,9 +48,9 @@ render() {
           </form>
           </header>
 
-          <div className="main">
-        <ProductList  title="Black Friday"/>
-    </div>
+        <div className="main">
+         <ProductList  title="Promoção Black Friday! "/>
+         </div>
       </div>
   );
  }
