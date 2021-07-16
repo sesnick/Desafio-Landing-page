@@ -3,7 +3,7 @@ import CartIcon from './images/banner.jpg';
 const Pictures = props => {
     return(
         <div>
-           <img src={CartIcon} />
+           <img src={CartIcon} alt="Foto black friday"/>
         </div>
     );
 };
